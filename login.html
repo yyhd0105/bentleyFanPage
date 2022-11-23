@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>login.html</title>
+  <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.dropotron.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+    </noscript>
+    <link rel="stylesheet" href="assets/css/main3.css" />
+    <style>
+     *{
+       box-sizing:border-box;
+       font-family:"나눔스퀘어라운드";
+     }
+     body{
+       margin:0;
+     }
+     ul{ list-style: none;}
+
+  .column{
+    float:left;
+    color: black;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .column.side{
+    width:20%;
+  }
+  .column.middle{
+    width:70%;
+  }
+  .row:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+
+  @media screen and (max-width:600px){
+    .column.side, .column.middle{
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body class="homepage">
+
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+        <nav id="nav">
+          <ul>
+            <li><a href="index1.html">Home</a></li>
+            <li>
+              <a href="index2.html">회원정보</a>
+              <ul>
+                <li><a href="sign.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="index.html">로그아웃</a></li>
+                <li><a href="index2.html">정보 수정</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="index3.html">게시판</a>
+              <ul>
+                <li><a href="index3.html">공지사항</a></li>
+                <li><a href="index4.html">사진/짤 공유방</a></li>
+                <li><a href="index5.html">영상 공유방</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">공식사이트</a>
+              <ul>
+                <li><a href="https://instagram.com/bentleyhammington?igshid=y65l5mcbll51" target="_blank">인스타그램</a></li>
+                <li><a href="http://cafe.daum.net/william16" target="_blank">팬카페</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+          <!-- Banner -->
+            <div id="banner">
+              <div class="container">
+                <section>
+                  <header class="major">
+                    <h2>bentleyhammington(정우성)</h2>
+                    <span class="byline">bentleyhammington(벤틀리해밍턴) 팬페이지</span>
+                  </header>
+                </section>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/main.js"></script>
+</div>
+
+</div>
+<form id="frmNIDLogin" name="frmNIDLogin" target="_top" autocomplete="off" action="index1.html" method="POST">
+      <input type="hidden" id="localechange" name="localechange" value="">
+      <input type="hidden" name="dynamicKey" id="dynamicKey" value="djqk9ePCaw2ofWLNojEW2vGn7vgc0s4Besh4GtXThIr6cU7ZRyq7Dh77sUEily_wS-_WWYnhVEr1olbwPf0MF-EBMuoqfh2IhR4Dhp7QBpc">
+      <input type="hidden" name="encpw" id="encpw" value="">
+<input type="hidden" name="enctp" id="enctp" value="1">
+<input type="hidden" name="svctype" id="svctype" value="1">
+<input type="hidden" name="smart_LEVEL" id="smart_LEVEL" value="-1">
+<input type="hidden" name="bvsd" id="bvsd" value="">
+<input type="hidden" name="encnm" id="encnm" value="">
+<input type="hidden" name="locale" id="locale" value="ko_KR">
+<input type="hidden" name="url" id="url" value="https://www.naver.com">
+
+      <fieldset class="login_form">
+        <legend class="blind">로그인</legend>
+        <div class="id_area">
+          <div class="input_row" id="id_area">
+            <span class="input_box">
+              <label for="id" id="label_id_area" class="lbl" style="display: block;">아이디</label>
+              <input type="text" id="id" name="id" accesskey="L" placeholder="아이디" class="int" maxlength="41" value="">
+            </span>
+
+          </div>
+          <div class="error" id="err_empty_id" style="display:none" aria-live="assertive"></div>
+        </div>
+        <div class="pw_area">
+          <div class="input_row" id="pw_area">
+            <span class="input_box">
+              <label for="pw" id="label_pw_area" class="lbl">비밀번호</label>
+              <input type="password" id="pw" name="pw" placeholder="비밀번호" class="int" maxlength="16">
+            </span>
+            <div class="ly_v2" id="err_capslock" style="display:none;">
+              <div class="ly_box">
+                <p><strong>Caps Lock</strong>이 켜져 있습니다.</p>
+              </div>
+              <span class="sp ly_point"></span>
+            </div>
+          </div>
+          <div class="error" id="err_empty_pw" style="display:none" aria-live="assertive"></div>
+        </div>
+        <span class="login_check_box">
+          <input type="checkbox" id="login_chk" name="nvlong" class="" value="off">
+        <label for="login_chk" id="label_login_chk" class="ico_keep_check ">로그인 상태 유지</label>
+        <br>
+        <input type="submit" title="로그인" alt="로그인" value="로그인" class="btn_global" id="log.login">
+        <div class="check_info">
+          <div class="login_check">
+            </span>
+          </div>
+
+      </fieldset>
+    </form>
+<div> <a href="sign.html" class="button alt">회원가입</a></div>
+    <footer id="footer">
+    <p>벤틀리 해밍턴 공식 인스타그램 https://instagram.com/bentleyhammington?igshid=y65l5mcbll51</p>
+    </footer>
+</body>
+</html>
